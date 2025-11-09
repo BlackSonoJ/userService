@@ -115,6 +115,11 @@
           <artifactId>weld-se-core</artifactId>
           <version>5.1.2.Final</version>
       </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>1.7.36</version>
+      </dependency>
   </dependencies>
 
   <build>
