@@ -14,8 +14,12 @@ import java.util.List;
 @ApplicationScoped
 public class UserDaoImpl implements UserDao {
 
+    private final SessionFactory sessionFactory;
+
     @Inject
-    private SessionFactory sessionFactory;
+    public UserDaoImpl(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
 
     @Override
     public List<User> findAll() {

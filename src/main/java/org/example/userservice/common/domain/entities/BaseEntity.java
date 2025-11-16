@@ -1,7 +1,6 @@
 package org.example.userservice.common.domain.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,7 +12,6 @@ import java.time.Instant;
 
 @MappedSuperclass
 @NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 public class BaseEntity implements Serializable {
